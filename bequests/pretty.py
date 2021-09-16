@@ -19,7 +19,7 @@ class HttpLexer(RegexLexer):
         "root": [
             (r"\s+", token.Text),
             (
-                r"(HTTP/[\d.]+\s+)(\d+)(\s+.+",
+                r"(HTTP/[\d.]+\s+)(\d+)(\s+.+)",
                 bygroups(token.Operator, token.Number, token.String),
             ),
             (r"(.*?:)(.+)", bygroups(token.Name, token.String)),
