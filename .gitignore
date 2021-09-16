@@ -1,0 +1,5 @@
+# PYCHARM
+.idea/
+
+# POETRY
+poetry.lock
